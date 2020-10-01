@@ -36,6 +36,7 @@
 
     <script src="https://unpkg.com/swagger-ui-dist@3.35/swagger-ui-bundle.js" charset="UTF-8"></script>
     <script src="https://unpkg.com/swagger-ui-dist@3.35/swagger-ui-standalone-preset.js" charset="UTF-8"></script>
+    <script src="specs.js" charset="UTF-8"></script>
     <script>
     window.onload = function() {
       
@@ -52,10 +53,7 @@
         ],
         layout: "StandaloneLayout",
         validatorUrl: "https://validator.swagger.io/validator",
-        urls: [
-            {url: "https://petstore.swagger.io/v2/swagger.json", name: "Petshop API"},
-            {url: "https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v2.0/json/uber.json", name: "Uber API"},
-        ],
+        urls: window._specs
       })
       
       
